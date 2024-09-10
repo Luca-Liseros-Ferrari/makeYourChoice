@@ -1,0 +1,605 @@
+@keyframes border-pulsate {
+    0% {
+        border-color: transparent;
+    }
+
+    25% {
+        border-color: #FFF;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    75% {
+        border-color: #FFF;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+@keyframes appear-disappear {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#adviceClick {
+    opacity: 0;
+    position: static;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background: #000;
+    width: auto;
+    color: #C2CB94;
+    transition: opacity 1.5s ease-in-out;
+}
+
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #C2CB94;
+    background-image: url(billy/nuove/billyBackground.png);
+    background-size: 150px 150px;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    width: auto;
+    height: 618px;
+}
+
+/* classes */
+.loadImg,
+.billyInitial,
+.liserosSite,
+.creepSite,
+.artSite,
+.minVibe,
+.webDev,
+.midoripol,
+.cf {
+    /* position: relative;
+    top: 140px;
+    */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: -20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    transition: all 1s;
+    overflow: visible;
+    width: 1280px;
+    height: 720px;
+}
+
+.loadImg {
+    display: grid;
+}
+
+.billyInitial {
+    display: none;
+}
+
+.liserosSite {
+    display: none;
+}
+
+.webDev {
+    display: none;
+}
+
+.creepSite {
+    display: none;
+}
+
+.artSite {
+    display: none;
+}
+
+.minVibe {
+    display: none;
+}
+
+.midoripol {
+    display: none;
+}
+
+.cf {
+    display: none;
+}
+
+/* classes */
+#makeYourChoice {
+    width: 98px;
+    height: 62px;
+    position: absolute;
+    top: 165px;
+    left: 902px;
+    cursor: pointer;
+    /* background: violet; */
+}
+
+.pulsanti {
+    display: inline-block;
+    position: absolute;
+    left: 889px;
+    top: 220px;
+    z-index: 999;
+}
+
+.r,
+.l {
+    display: inline-flex;
+    flex-direction: row;
+    width: 50px;
+    height: 37px;
+    cursor: pointer;
+    /* background-color: orangered; */
+}
+
+.r {
+    transform: rotate(180deg);
+}
+
+.l {
+    margin-left: 10px;
+}
+
+.changeSite {
+    width: 600px;
+    height: 423px;
+    position: absolute;
+    left: 292px;
+    top: 161px;
+    cursor: pointer;
+    /* background: orangered; */
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+span {
+    font-style: oblique;
+    letter-spacing: 1px;
+    font-size: 14px;
+    opacity: 0.8;
+    position: relative;
+    top: 10px;
+    color: #000;
+}
+
+footer {
+    position: fixed;
+    height: 40px;
+    text-align: center;
+    background-color: #C2CB94;
+    color: #000;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+
+@media only screen and (max-width: 1025px) {
+
+    .loadImg,
+    .billyInitial,
+    .liserosSite,
+    .creepSite,
+    .artSite,
+    .minVibe,
+    .webDev,
+    .midoripol,
+    .cf {
+        justify-content: start;
+        left: 35px;
+    }
+
+    /*class images*/
+    .distSignal,
+    .billy,
+    .lise,
+    .creepTone,
+    .artTemplate,
+    .musicTemplate,
+    .dev,
+    .midori,
+    .cristianaFitness {
+        width: auto;
+        height: 563px;
+    }
+
+    .pulsanti {
+        left: 568px;
+        top: 233px;
+    }
+
+    .r,
+    .l {
+        width: 43px;
+        height: 33px;
+    }
+
+    .changeSite {
+        width: 455px;
+        height: 348px;
+        top: 201px;
+        left: 80px;
+    }
+
+    #makeYourChoice {
+        width: 77px;
+        height: 48px;
+        top: 189px;
+        left: 581px;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+
+    .distSignal,
+    .billy,
+    .lise,
+    .creepTone,
+    .artTemplate,
+    .musicTemplate,
+    .dev,
+    .midori,
+    .cristianaFitness {
+        width: auto;
+        height: 405px;
+        scale: 1.2;
+    }
+
+    .pulsanti {
+        display: flex;
+        left: 447px;
+        top: 249px;
+    }
+
+    .r,
+    .l {
+        width: 37px;
+        height: 26px;
+        margin: 2px;
+    }
+
+    .changeSite {
+        width: 410px;
+        height: 303px;
+        top: 225px;
+        left: 12px;
+    }
+
+    #makeYourChoice {
+        width: 76px;
+        height: 44px;
+        top: 209px;
+        left: 450px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    footer {
+        margin-top: -240px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .distSignal,
+    .billy,
+    .lise,
+    .creepTone,
+    .artTemplate,
+    .musicTemplate,
+    .dev,
+    .midori,
+    .cristianaFitness {
+        width: auto;
+        height: 248px;
+        scale: 1.8;
+        margin-left: 105px;
+    }
+
+    /* containers */
+    .loadImg,
+    .billyInitial,
+    .liserosSite,
+    .creepSite,
+    .artSite,
+    .minVibe,
+    .webDev,
+    .midoripol,
+    .cf {
+        left: 0;
+    }
+
+    .pulsanti {
+        left: 437px;
+        top: 255px;
+    }
+
+    .r,
+    .l {
+        width: 37px;
+        height: 25px;
+    }
+
+    .changeSite {
+        width: 385px;
+        height: 276px;
+        top: 235px;
+        left: 36px;
+    }
+
+    #makeYourChoice {
+        width: 70px;
+        height: 40px;
+        top: 223px;
+        left: 443px;
+    }
+
+    span {
+        font-size: 11px;
+    }
+
+    footer {
+        margin-top: -340px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+
+    .loadImg,
+    .billyInitial,
+    .liserosSite,
+    .creepSite,
+    .artSite,
+    .minVibe,
+    .webDev,
+    .midoripol,
+    .cf {
+        margin-left: 52px;
+    }
+
+
+    .distSignal,
+    .billy,
+    .lise,
+    .creepTone,
+    .artTemplate,
+    .musicTemplate,
+    .dev,
+    .midori,
+    .cristianaFitness {
+        width: auto;
+        height: 90px;
+        scale: 4.3;
+    }
+
+    .pulsanti {
+        left: 320px;
+        top: 269px;
+        height: 19px;
+        width: 53px;
+        cursor: pointer;
+    }
+
+    .r,
+    .l {
+        width: 32px;
+        height: 21px;
+    }
+
+    .dx {
+        margin-left: 0;
+    }
+
+    .sx {
+        margin-left: -3px;
+    }
+
+    .changeSite {
+        width: 334px;
+        height: 249px;
+        top: 246px;
+        left: -27px;
+    }
+
+    #makeYourChoice {
+        width: 60px;
+        top: 236px;
+        left: 324px;
+    }
+
+    span {
+        font-size: 10px;
+    }
+
+    footer {
+        margin-top: -400px;
+    }
+
+    #adviceClick {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+
+    .distSignal,
+    .billy,
+    .lise,
+    .creepTone,
+    .artTemplate,
+    .musicTemplate,
+    .dev,
+    .midori,
+    .cristianaFitness {
+        width: auto;
+        height: 90px;
+        scale: 4;
+        margin-left: 60px;
+    }
+
+    .pulsanti {
+        display: flex;
+        left: 269px;
+        top: 273px;
+    }
+
+    .r,
+    .l {
+        width: 25px;
+        height: 20px;
+    }
+
+    .dx {
+        margin-left: 0;
+    }
+
+    .sx {
+        margin-left: -3px;
+    }
+
+    .changeSite {
+        width: 302px;
+        height: 239px;
+        top: 252px;
+        left: -45px;
+    }
+
+    #makeYourChoice {
+        width: 53px;
+        height: 35px;
+        top: 247px;
+        left: 268px;
+    }
+
+    footer {
+        margin-top: -420px;
+    }
+
+    span {
+        font-size: 10px;
+    }
+    #adviceClick {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 380px) {
+
+    .distSignal,
+    .billy,
+    .lise,
+    .creepTone,
+    .artTemplate,
+    .musicTemplate,
+    .dev,
+    .midori,
+    .cristianaFitness {
+        width: auto;
+        height: 90px;
+        scale: 3.5;
+        margin-left: 14px;
+    }
+
+    .pulsanti {
+        left: 204px;
+        top: 282px;
+    }
+
+    .r,
+    .l {
+        width: 20px;
+    }
+
+    #makeYourChoice {
+        width: 49px;
+        height: 32px;
+        top: 258px;
+        left: 200px;
+    }
+
+    .changeSite {
+        width: 248px;
+        height: 207px;
+        top: 261px;
+        left: -58px;
+    }
+    #adviceClick {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 299px) {
+
+    .distSignal,
+    .billy,
+    .lise,
+    .creepTone,
+    .artTemplate,
+    .musicTemplate,
+    .dev,
+    .midori,
+    .cristianaFitness {
+        scale: 3;
+    }
+
+    .pulsanti {
+        left: 180px;
+        top: 291px;
+    }
+
+    #makeYourChoice {
+        width: 43px;
+        top: 268px;
+        left: 180px;
+    }
+
+    .changeSite {
+        width: 229px;
+        height: 183px;
+        top: 279px;
+        left: -59px;
+    }
+
+}
